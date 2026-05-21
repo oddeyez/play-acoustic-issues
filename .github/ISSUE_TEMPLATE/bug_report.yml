@@ -43,7 +43,7 @@ body:
     attributes:
       label: Editor URL
       description: Which deploy of the editor were you using?
-      value: https://oddeyez.se/test/app/
+      value: https://oddeyez.se/app/
     validations:
       required: false
 
