@@ -25,18 +25,9 @@ body:
     attributes:
       label: Device firmware version
       description: Shown in the editor's firmware banner once it's connected, or on the device LCD (Setup → System).
-      placeholder: e.g. 1.4.00 Build 51 (PA) or 1.3.00 Build 34 (PE)
+      placeholder: e.g. 1.4.0 or 1.3.0
     validations:
       required: false
-
-  - type: input
-    id: environment
-    attributes:
-      label: Browser and operating system
-      description: Web MIDI behavior varies a lot across browsers and OSes — this helps narrow down platform-specific bugs.
-      placeholder: e.g. Chrome 148 on Windows 11, or Safari 17 on macOS 14
-    validations:
-      required: true
 
   - type: input
     id: url
@@ -44,6 +35,15 @@ body:
       label: Editor URL
       description: Which deploy of the editor were you using?
       value: https://oddeyez.se/app/
+    validations:
+      required: false
+
+  - type: input
+    id: build
+    attributes:
+      label: Editor build
+      description: Shown at the bottom of the editor next to the version (e.g. "build 6964"). Helps us pin the bug to a specific deploy.
+      placeholder: e.g. build 6964
     validations:
       required: false
 
